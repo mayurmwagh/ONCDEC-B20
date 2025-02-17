@@ -12,3 +12,7 @@ Namespace: Devide your cluster
 kubectl apply -f filename  --  this command will create your resources 
 for e.g
     kubectl apply -f basic-pod.yaml
+kubectl delete -f filename -- this will delete your resources
+    kubectl delete -f basic-pod.yaml 
+kubectl descibe pod_name -- this will describe your pods 
+kubectl get pods -o wide -- this will show wider information of your pods
