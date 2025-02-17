@@ -7,3 +7,8 @@ Services: Expose your application outside
     - LoadBalancer: Expose your with the help of the load balancer (ELB)  Cloud loadbalancer
 Namespace: Devide your cluster 
 
+
+# commands
+kubectl apply -f filename  --  this command will create your resources 
+for e.g
+    kubectl apply -f basic-pod.yaml
