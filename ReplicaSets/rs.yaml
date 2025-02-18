@@ -18,6 +18,6 @@ spec:
             containerPort: 80
   selector:
     matchLabels:
-      app: my-app
+      app: demo-app
 
   replicas: 5
