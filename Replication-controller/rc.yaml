@@ -7,17 +7,16 @@ metadata:
 spec:
   template:
     metadata:
-      name: my-app
       labels:
         app: my-app
       namespace: dev
-      spec:
-        containers:
-          - name: my-container
-            image: httpd:latest 
-            ports:
-            - name: http
-              containerPort: 80
+    spec:
+      containers:
+        - name: my-container
+          image: httpd:latest 
+          ports:
+          - name: http
+            containerPort: 80
   selector:
     app: my-app
 
