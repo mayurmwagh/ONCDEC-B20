@@ -7,6 +7,7 @@ Services: Expose your application outside
     - LoadBalancer: Expose your with the help of the load balancer (ELB)  Cloud loadbalancer
 Namespace: Devide your cluster 
 ReplicationController: Manage your replicas 
+ReplicaSet: Manage your replicas
 
 
 # commands
@@ -23,3 +24,36 @@ kubectl get pods -o wide -- this will show wider information of your pods
 kubectl get ns
 kubectl get pods  #this command will list the pods which are in default namespace  
 kubectl get pods -n dev #this command will show pods of dev namespace
+
+
+
+# commands 
+kubectl get rc  # this will show the replication controller in your cluster
+
+
+
+rc --> v1
+        previous generation
+        selector
+            app: my-app 
+
+rs  --> app/v1 
+        advance generation   
+        set base selector 
+        
+        set base oprators
+        In, NotIn, Exist
+
+
+Set { apple, banana, mango, orange }
+list [ apple, banana, orange ]
+
+
+100 pods
+
+app: cbz
+app: dyl
+app: gremio
+env: prod
+env: dev
+env: release
