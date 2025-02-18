@@ -16,3 +16,8 @@ kubectl delete -f filename -- this will delete your resources
     kubectl delete -f basic-pod.yaml 
 kubectl descibe pod_name -- this will describe your pods 
 kubectl get pods -o wide -- this will show wider information of your pods
+
+
+# commands
+kubectl get ns
+kubectl get pods  #this command will list the pods which are in default namespace  
