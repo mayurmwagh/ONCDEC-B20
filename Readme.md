@@ -6,6 +6,7 @@ Services: Expose your application outside
     - NodePort: Expose your application out side the cluster on node port 
     - LoadBalancer: Expose your with the help of the load balancer (ELB)  Cloud loadbalancer
 Namespace: Devide your cluster 
+ReplicationController: Manage your replicas 
 
 
 # commands
@@ -21,3 +22,4 @@ kubectl get pods -o wide -- this will show wider information of your pods
 # commands
 kubectl get ns
 kubectl get pods  #this command will list the pods which are in default namespace  
+kubectl get pods -n dev #this command will show pods of dev namespace
