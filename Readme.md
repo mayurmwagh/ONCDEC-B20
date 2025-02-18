@@ -1,3 +1,21 @@
+
+# basic of k8s
+To run a pod in k8s cluster
+#kubectl run nginx --image=nginx --port=80 ---> to run the pod of nginx image (this approch is not widly use	d)
+
+
+#kubectl get pods  ---> This command will list all the pods
+# kubectl get nods --> list down your worker nodes
+
+
+Services:
+	1. LoadBalancer 
+	2. NodePort 
+	3. ClusterIP
+ 
+#Kubectl describe pods pod_name. ---> this command will describe the pod 
+
+
 # Objects in k8
 
 Pod: Smallest deployable unit 
@@ -57,3 +75,8 @@ app: gremio
 env: prod
 env: dev
 env: release
+
+
+to scale your rs and rc 
+kubectl scale rs --replicas=10 my-rs
+kubectl scale rs --replicas=2 my-rs
