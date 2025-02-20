@@ -26,6 +26,8 @@ Services: Expose your application outside
 Namespace: Devide your cluster 
 ReplicationController: Manage your replicas 
 ReplicaSet: Manage your replicas
+Deployments: Deployments are used to manage your pods in k8s 
+
 
 
 # commands
