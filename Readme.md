@@ -27,6 +27,7 @@ Namespace: Devide your cluster
 ReplicationController: Manage your replicas 
 ReplicaSet: Manage your replicas
 Deployments: Deployments are used to manage your pods in k8s 
+StatefullSets: Stateful Sets are use to deploy a application which are dependent
 
 
 
@@ -82,3 +83,16 @@ env: release
 to scale your rs and rc 
 kubectl scale rs --replicas=10 my-rs
 kubectl scale rs --replicas=2 my-rs
+
+
+Stateless Application        |    Statefull Application
+HTTPD, Nginx, tomcat         |    Database, Rabitmq, MangoDB
+
+--------------------------
+
+Deployment                      |    Statefull sets
+Randomly Pod Created            |    Sequantially Pod Created 
+Randomly Pod Deleted            |    Sequantially Pod Deleted
+Random hashes in name           |    Sequantially char in name
+All pods can Read/write         |    Master Pod can read/write Other pods read
+All pods can create from image  |    Only first others can crate form previous
