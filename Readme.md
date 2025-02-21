@@ -96,3 +96,5 @@ Randomly Pod Deleted            |    Sequantially Pod Deleted
 Random hashes in name           |    Sequantially char in name
 All pods can Read/write         |    Master Pod can read/write Other pods read
 All pods can create from image  |    Only first others can crate form previous
+
+kubectl get sts --> to get statefull 
