@@ -28,6 +28,7 @@ ReplicationController: Manage your replicas
 ReplicaSet: Manage your replicas
 Deployments: Deployments are used to manage your pods in k8s 
 StatefullSets: Stateful Sets are use to deploy a application which are dependent
+DaemonSets: DaemonSets are used to ensure that a replica of pod is running on each and every node
 
 
 
@@ -39,6 +40,7 @@ kubectl delete -f filename -- this will delete your resources
     kubectl delete -f basic-pod.yaml 
 kubectl descibe pod_name -- this will describe your pods 
 kubectl get pods -o wide -- this will show wider information of your pods
+
 
 
 # commands
@@ -98,3 +100,4 @@ All pods can Read/write         |    Master Pod can read/write Other pods read
 All pods can create from image  |    Only first others can crate form previous
 
 kubectl get sts --> to get statefull 
+
