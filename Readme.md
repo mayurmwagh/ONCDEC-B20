@@ -29,7 +29,8 @@ ReplicaSet: Manage your replicas
 Deployments: Deployments are used to manage your pods in k8s 
 StatefullSets: Stateful Sets are use to deploy a application which are dependent
 DaemonSets: DaemonSets are used to ensure that a replica of pod is running on each and every node
-
+Congfigmaps: It stores a variables
+Secrets: It stores variables in encoded form
 
 
 # commands
@@ -100,4 +101,14 @@ All pods can Read/write         |    Master Pod can read/write Other pods read
 All pods can create from image  |    Only first others can crate form previous
 
 kubectl get sts --> to get statefull 
+
+
+
+NAME=Aditi
+
+echo "$NAME is a it engineer" 
+echo "$NAME is also a devops trainer"
+echo "$NAME Work in cloudblitz" 
+echo "$NAME Lives in India"
+echo "Hobby of $NAME is travelling" 
 
