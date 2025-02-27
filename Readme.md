@@ -31,6 +31,7 @@ StatefullSets: Stateful Sets are use to deploy a application which are dependent
 DaemonSets: DaemonSets are used to ensure that a replica of pod is running on each and every node
 Congfigmaps: It stores a variables
 Secrets: It stores variables in encoded form
+HPA: it scales a pods
 
 
 # commands
@@ -111,4 +112,17 @@ echo "$NAME is also a devops trainer"
 echo "$NAME Work in cloudblitz" 
 echo "$NAME Lives in India"
 echo "Hobby of $NAME is travelling" 
+
+
+Horizontal pod scheling 
+
+HPA stands for Horizontal pod autoscalar . its a k8s feature that automatically scales the number of pods on deployment based on observed CPU and memory usage
+
+Why we use HPA
+
+Ajust the replica count of deployment 
+handle sudden traffic spiks automatically 
+Reduce manual invervation 
+
+
 
