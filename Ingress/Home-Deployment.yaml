@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-Metadata:
+metadata:
   name: home-service
 spec:
   replicas: 2
