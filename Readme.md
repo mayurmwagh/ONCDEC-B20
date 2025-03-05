@@ -32,6 +32,7 @@ DaemonSets: DaemonSets are used to ensure that a replica of pod is running on ea
 Congfigmaps: It stores a variables
 Secrets: It stores variables in encoded form
 HPA: it scales a pods
+Ingress: It is use to distribute traffic amongs the services 
 
 
 # commands
@@ -139,3 +140,6 @@ kubectl patch deployment metrics-server -n kube-system --type='json' -p='[
 kubectl get pods -n kube-system
 
 
+
+# Ingress controller installation
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
