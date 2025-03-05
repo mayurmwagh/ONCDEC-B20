@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mobile-service
-        image: mayurwagh/mobile:latest
+        image: mayurwagh/mobile:lastest
         ports:
         - containerPort: 80 
 ---
