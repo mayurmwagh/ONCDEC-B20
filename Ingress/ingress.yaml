@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata: 
+  name: cbz-ingress
+  labels:
+    app: cbz-ingress
+spec:
+  ingressClassName: nginx 
+  rules:
+    - host: "cbz.com"
+      http:
+        paths: 
+        - pathType: Prefix
+          path: "/"
+          backend:
+            service: home-service
+            port: 
+              number: 80
+    - host: "mobile.cbz.com"
+      http:
+        paths: 
+        - pathType: Prefix
+          path: "/"
+          backend:
+            service: mobile-service
+            port: 
+              number: 80
+    - host: "laptop.cbz.com"
+      http:
+        paths: 
+        - pathType: Prefix
+          path: "/"
+          backend:
+            service: laptop-service
+            port: 
+              number: 80
+

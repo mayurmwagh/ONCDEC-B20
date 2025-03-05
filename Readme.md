@@ -143,3 +143,7 @@ kubectl get pods -n kube-system
 
 # Ingress controller installation
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
+
+
+prefix -- cb --> "cbz.com"
+exact  -- cb ---> "cbz.com"
