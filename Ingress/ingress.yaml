@@ -10,28 +10,28 @@ spec:
     - host: "cbz.com"
       http:
         paths: 
-        - pathType: Prefix
-          path: "/"
-          backend:
-            service: home-service
-            port: 
-              number: 80
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service: home-service
+              port: 
+                number: 80
     - host: "mobile.cbz.com"
       http:
         paths: 
-        - pathType: Prefix
-          path: "/"
-          backend:
-            service: mobile-service
-            port: 
-              number: 80
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service: mobile-service
+              port: 
+                number: 80
     - host: "laptop.cbz.com"
       http:
         paths: 
-        - pathType: Prefix
-          path: "/"
-          backend:
-            service: laptop-service
-            port: 
-              number: 80
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service: laptop-service
+              port: 
+                number: 80
 
