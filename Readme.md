@@ -149,6 +149,11 @@ prefix -- cb --> "cbz.com"
 exact  -- cb ---> "cbz.com"
 
 
+---------------------
 
+
+# Terraform
+
+Terraform -- IAC (Infrastructure as a code)
 
 
